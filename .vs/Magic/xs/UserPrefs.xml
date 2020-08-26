@@ -1,8 +1,8 @@
 ﻿<Properties StartupConfiguration="{A6C52465-10A9-434C-8216-961DC7597A9B}|Default">
-  <MonoDevelop.Ide.Workbench ActiveDocument="MagicTests/UnitTest1.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MagicTests/MagicTests.cs">
     <Files>
-      <File FileName="Magic/Program.cs" Line="6" Column="29" />
-      <File FileName="MagicTests/UnitTest1.cs" Line="1" Column="1" />
+      <File FileName="Magic/Program.cs" Line="3" Column="17" />
+      <File FileName="MagicTests/UnitTest1.cs" Line="9" Column="47" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,7 +10,7 @@
           <Node name="Magic" expanded="True">
             <Node name="Magic" expanded="True" />
             <Node name="MagicTests" expanded="True">
-              <Node name="UnitTest1.cs" selected="True" />
+              <Node name="MagicTests.cs" selected="True" />
             </Node>
           </Node>
         </State>
@@ -28,7 +28,6 @@
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.MagicTests FirstBuild="True" />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
