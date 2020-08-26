@@ -4,19 +4,36 @@ using Magic.Year;
 
 namespace MagicTests
 {
-    public class MagicTests_IsMagicShould
+    public class MagicTests_UserShould
     {
-        private readonly MagicYear _magicYear;
-        public MagicTests_IsMagicShould() {
-            _magicYear = new MagicYear();
+        private readonly User _user;
+        public MagicTests_UserShould()
+        {
+            _user = new User("John","Doe",2020);
         }
 
         [Fact]
-        public void IsMagic_InputIs1_ReturnFalse()
+        public void GetName_EqualJohn()
         {
-            var result = _magicYear.IsMagic(1);
+            var result = _user.Name;
 
-            Assert.False(result, "1 should not be prime");
+            Assert.Equal("John", result);
+        }
+
+        [Fact]
+        public void GetSurName_EqualDoe()
+        {
+            var result = _user.Surname;
+
+            Assert.Equal("Doe", result);
+        }
+
+        [Fact]
+        public void GetWorkStartYear_Equal2020()
+        {
+            var result = _user.WorkStartYear;
+
+            Assert.Equal(2020, result);
         }
     }
 }
