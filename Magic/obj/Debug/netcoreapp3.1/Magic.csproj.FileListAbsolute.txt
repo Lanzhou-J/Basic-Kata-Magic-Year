@@ -1,0 +1,12 @@
+/Users/lanzhou.jiang/Projects/Magic/Magic/bin/Debug/netcoreapp3.1/Magic.deps.json
+/Users/lanzhou.jiang/Projects/Magic/Magic/bin/Debug/netcoreapp3.1/Magic.runtimeconfig.json
+/Users/lanzhou.jiang/Projects/Magic/Magic/bin/Debug/netcoreapp3.1/Magic.runtimeconfig.dev.json
+/Users/lanzhou.jiang/Projects/Magic/Magic/bin/Debug/netcoreapp3.1/Magic.dll
+/Users/lanzhou.jiang/Projects/Magic/Magic/bin/Debug/netcoreapp3.1/Magic.pdb
+/Users/lanzhou.jiang/Projects/Magic/Magic/obj/Debug/netcoreapp3.1/Magic.csprojAssemblyReference.cache
+/Users/lanzhou.jiang/Projects/Magic/Magic/obj/Debug/netcoreapp3.1/Magic.AssemblyInfoInputs.cache
+/Users/lanzhou.jiang/Projects/Magic/Magic/obj/Debug/netcoreapp3.1/Magic.AssemblyInfo.cs
+/Users/lanzhou.jiang/Projects/Magic/Magic/obj/Debug/netcoreapp3.1/Magic.csproj.CoreCompileInputs.cache
+/Users/lanzhou.jiang/Projects/Magic/Magic/obj/Debug/netcoreapp3.1/Magic.dll
+/Users/lanzhou.jiang/Projects/Magic/Magic/obj/Debug/netcoreapp3.1/Magic.pdb
+/Users/lanzhou.jiang/Projects/Magic/Magic/obj/Debug/netcoreapp3.1/Magic.genruntimeconfig.cache

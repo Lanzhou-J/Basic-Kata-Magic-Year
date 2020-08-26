@@ -1,0 +1,38 @@
+﻿<Properties StartupConfiguration="{A6C52465-10A9-434C-8216-961DC7597A9B}|Default">
+  <MonoDevelop.Ide.Workbench ActiveDocument="MagicTests/UnitTest1.cs">
+    <Files>
+      <File FileName="Magic/Program.cs" Line="6" Column="29" />
+      <File FileName="MagicTests/UnitTest1.cs" Line="1" Column="1" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="Magic" expanded="True">
+            <Node name="Magic" expanded="True" />
+            <Node name="MagicTests" expanded="True">
+              <Node name="UnitTest1.cs" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State name="__root__">
+          <Node name="Magic" expanded="True" selected="True" />
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="Magic" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.MagicTests FirstBuild="True" />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.Magic PreferredExecutionTarget="MonoDevelop.Default" />
+</Properties>
