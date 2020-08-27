@@ -7,6 +7,13 @@ namespace Magic.Year
         public Salary AnnualSalary { get; private set; }
         public Salary MonthlySalary { get; private set; }
 
+        public Work(int startYear, Salary annualSalary)
+        {
+            StartYear = startYear;
+            AnnualSalary = annualSalary;
+            MonthlySalary = CalculateMonthlySalary(annualSalary);
+        }
+
         public Work()
         {
             Console.WriteLine("Please input your work start year: "); 

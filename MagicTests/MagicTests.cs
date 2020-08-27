@@ -7,10 +7,12 @@ namespace MagicTests
     {
         private readonly User _user;
         private readonly Salary _salary;
+        private readonly Work _work;
         public MagicTestsUserShould()
         {
             _salary = new Salary(amount:60050);
-            _user = new User("John","Doe",2020, _salary);
+            _work = new Work(startYear:2020, annualSalary:_salary);
+            _user = new User("John","Doe", work:_work);
         }
 
         [Fact]
@@ -28,21 +30,12 @@ namespace MagicTests
 
             Assert.Equal("Doe", result);
         }
-
-        [Fact]
-        public void GetWorkStartYear_Equal2020()
-        {
-            var result = _user.WorkStartYear;
-
-            Assert.Equal(2020, result);
-        }
         
         [Fact]
-        public void GetAnnualSalary_Equal_salary()
+        public void GetFullName_EqualJohnDoe()
         {
-            var result = _user.AnnualSalary;
-
-            Assert.Equal(_salary, result);
+            var result = _user.Fullname;
+            Assert.Equal("John Doe", result);
         }
     }
 }
