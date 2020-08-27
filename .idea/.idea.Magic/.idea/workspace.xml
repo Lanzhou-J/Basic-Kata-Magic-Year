@@ -5,22 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="840f9218-321b-425f-bdf2-31473e2e51d3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Magic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Magic/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Magic/Magic.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Magic/Magic.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Magic/obj/Debug/netcoreapp3.1/Magic.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Magic/obj/Debug/netcoreapp3.1/Magic.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Magic/obj/Magic.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Magic/obj/Magic.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Magic/obj/Magic.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Magic/obj/Magic.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Magic/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Magic/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Magic/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Magic/obj/project.nuget.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MagicTests/MagicTests.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MagicTests/MagicTests.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MagicTests/bin/Debug/netcoreapp3.1/MagicTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MagicTests/bin/Debug/netcoreapp3.1/MagicTests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MagicTests/bin/Debug/netcoreapp3.1/MagicTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MagicTests/bin/Debug/netcoreapp3.1/MagicTests.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MagicTests/obj/Debug/netcoreapp3.1/MagicTests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MagicTests/obj/Debug/netcoreapp3.1/MagicTests.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MagicTests/obj/Debug/netcoreapp3.1/MagicTests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MagicTests/obj/Debug/netcoreapp3.1/MagicTests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MagicTests/obj/Debug/netcoreapp3.1/MagicTests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MagicTests/obj/Debug/netcoreapp3.1/MagicTests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MagicTests/obj/MagicTests.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/MagicTests/obj/MagicTests.csproj.nuget.dgspec.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MagicTests/obj/MagicTests.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/MagicTests/obj/MagicTests.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MagicTests/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/MagicTests/obj/project.assets.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MagicTests/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MagicTests/obj/project.nuget.cache" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +21,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+        <option value="$PROJECT_DIR$/MagicTests/MagicTests.cs" />
         <option value="$PROJECT_DIR$/Magic/Magic.cs" />
       </list>
     </option>
@@ -45,6 +34,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RunManager">
@@ -75,22 +65,40 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1598491358841</updated>
-      <workItem from="1598491366300" duration="968000" />
+      <workItem from="1598491366300" duration="1341000" />
+      <workItem from="1598494149994" duration="919000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="291" y="-1057" width="1467" height="1057" key="SettingsEditor" timestamp="1598492085506">
+    <state width="1743" height="235" key="GridCell.Tab.0.bottom" timestamp="1598494088144">
       <screen x="-127" y="-1057" width="1920" height="1057" />
     </state>
+    <state width="1743" height="235" key="GridCell.Tab.0.bottom/-127.-1057.1920.1057/0.23.1680.1027@-127.-1057.1920.1057" timestamp="1598494088144" />
+    <state width="1743" height="235" key="GridCell.Tab.0.center" timestamp="1598494088143">
+      <screen x="-127" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1743" height="235" key="GridCell.Tab.0.center/-127.-1057.1920.1057/0.23.1680.1027@-127.-1057.1920.1057" timestamp="1598494088143" />
+    <state width="1743" height="235" key="GridCell.Tab.0.left" timestamp="1598494088142">
+      <screen x="-127" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1743" height="235" key="GridCell.Tab.0.left/-127.-1057.1920.1057/0.23.1680.1027@-127.-1057.1920.1057" timestamp="1598494088142" />
+    <state width="1743" height="235" key="GridCell.Tab.0.right" timestamp="1598494088144">
+      <screen x="-127" y="-1057" width="1920" height="1057" />
+    </state>
+    <state width="1743" height="235" key="GridCell.Tab.0.right/-127.-1057.1920.1057/0.23.1680.1027@-127.-1057.1920.1057" timestamp="1598494088144" />
+    <state x="366" y="23" width="1467" height="1057" key="SettingsEditor" timestamp="1598494169645">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
     <state x="291" y="-1057" width="1467" height="1057" key="SettingsEditor/-127.-1057.1920.1057/0.23.1680.1027@-127.-1057.1920.1057" timestamp="1598492085506" />
+    <state x="366" y="23" key="SettingsEditor/-127.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1598494169645" />
   </component>
 </project>

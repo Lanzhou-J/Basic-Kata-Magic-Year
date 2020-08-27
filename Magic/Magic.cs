@@ -17,6 +17,8 @@ namespace Magic.Year
             WelcomeUser();
             User newUser = new User();
             Console.WriteLine(newUser.Name);
+            CalculationResult newCalculationResult = new CalculationResult(newUser);
+            newCalculationResult.PrintCalculationResult();
         }
     }
 
@@ -50,4 +52,48 @@ namespace Magic.Year
         WorkStartYear = int.Parse(Console.ReadLine());
       }
     }
+    
+    public class CalculationResult
+    {
+        private readonly User _user;
+
+        private readonly int _magicYear;
+
+        private readonly string _fullName;
+
+        public CalculationResult(User user, int magicYear, string fullName)
+        {
+            _user = user;
+            _magicYear = magicYear;
+            _fullName = fullName;
+        }
+
+        public CalculationResult(User user)
+        {
+            _user = user;
+            _magicYear = calculateMagicYear(user);
+            _fullName = formatFullName(user);
+        }
+
+        private string formatFullName(User user) {
+            string fullName = user.Name + " " + user.Surname;
+            return fullName;
+        }
+
+        private int calculateMagicYear(User user)
+        {
+            int magicYear = user.WorkStartYear + 65;
+            return magicYear;
+        }
+
+        public void PrintCalculationResult()
+        {
+            Console.WriteLine();
+            Console.WriteLine("Your magic age details are:"); 
+            Console.WriteLine(); 
+            Console.WriteLine("Name: "+_fullName); 
+            Console.WriteLine("Magic Year: " + _magicYear);
+        }
+
+    }    
 }
