@@ -16,7 +16,6 @@ namespace Magic.Year
         {
             WelcomeUser();
             User newUser = new User();
-            Console.WriteLine(newUser.Name);
             CalculationResult newCalculationResult = new CalculationResult(newUser);
             newCalculationResult.PrintCalculationResult();
         }
@@ -30,19 +29,24 @@ namespace Magic.Year
 
       public int WorkStartYear { get; private set; }
 
-      public User(string userName, string userSurname, int userWorkStartYear){
+      public Salary AnnualSalary { get; private set; }
+
+      public User(string userName, string userSurname, int userWorkStartYear, Salary annualSalary){
         Name = userName;
         Surname = userSurname;
         WorkStartYear = userWorkStartYear;
+        AnnualSalary = annualSalary;
       }
 
-      public User(){
-        Console.WriteLine("Please input your name: ");
-        Name = Console.ReadLine();
-        Console.WriteLine("Please input your surname: ");
-        Surname = Console.ReadLine();
-        Console.WriteLine("Please input your work start year: ");
-        WorkStartYear = int.Parse(Console.ReadLine());
+      public User(){ 
+          Console.WriteLine("Please input your name: "); 
+          Name = Console.ReadLine(); 
+          Console.WriteLine("Please input your surname: "); 
+          Surname = Console.ReadLine(); 
+          Console.WriteLine("Please input your work start year: "); 
+          WorkStartYear = int.Parse(Console.ReadLine()); 
+          Console.WriteLine("Please input your annual salary: "); 
+          AnnualSalary = new Salary();
       }
     }
     
@@ -54,29 +58,40 @@ namespace Magic.Year
 
         private readonly string _fullName;
 
-        public CalculationResult(User user, int magicYear, string fullName)
+        private Salary _monthlySalary;
+
+        public CalculationResult(User user, int magicYear, string fullName, Salary monthlySalary)
         {
             _user = user;
             _magicYear = magicYear;
             _fullName = fullName;
+            _monthlySalary = monthlySalary;
         }
 
         public CalculationResult(User user)
         {
             _user = user;
-            _magicYear = calculateMagicYear(user);
-            _fullName = formatFullName(user);
+            _monthlySalary = CalculateMonthlySalary(user);
+            _magicYear = CalculateMagicYear(user);
+            _fullName = FormatFullName(user);
         }
 
-        private string formatFullName(User user) {
+        private string FormatFullName(User user) {
             string fullName = user.Name + " " + user.Surname;
             return fullName;
         }
 
-        private int calculateMagicYear(User user)
+        private int CalculateMagicYear(User user)
         {
             int magicYear = user.WorkStartYear + 65;
             return magicYear;
+        }
+
+        private Salary CalculateMonthlySalary(User user)
+        {
+            decimal monthlySalaryAmount = user.AnnualSalary.Amount/12;
+            Salary monthlySalary = new Salary(amount:monthlySalaryAmount);
+            return monthlySalary;
         }
 
         public void PrintCalculationResult()
@@ -86,6 +101,7 @@ namespace Magic.Year
             Console.WriteLine(); 
             Console.WriteLine("Name: "+_fullName); 
             Console.WriteLine("Magic Year: " + _magicYear);
+            Console.WriteLine("Monthly salary: "  + _monthlySalary.RoundedAmount);
         }
 
     }
@@ -94,7 +110,17 @@ namespace Magic.Year
     {
         private string _currency;
         private decimal _amount;
+        public decimal Amount
+        {
+            get { return _amount; }
+            set { _amount = value; }
+        }
         private int _roundedAmount;
+        public int RoundedAmount
+        {
+            get { return _roundedAmount; }
+            set { _roundedAmount = value; }
+        }
 
         public Salary(string currency, decimal amount, int roundedAmount)
         {
@@ -119,9 +145,28 @@ namespace Magic.Year
         {
             _currency = "AUD";
             _amount = amount;
-            _roundedAmount = 0;
+            _roundedAmount = RoundSalary(amount);
         }
-        
-        
+
+        public Salary()
+        {
+            _currency = "AUD";
+            _amount = decimal.Parse(Console.ReadLine());
+            _roundedAmount = RoundSalary(_amount);
+        }
+
+        private int RoundSalary(decimal amount)
+        {
+            var truncate = Math.Truncate(amount);
+            if ((amount - truncate) < (decimal) 0.5)
+            {
+                return (int)truncate;
+            }
+            else
+            {
+                return (int) truncate + 1;
+            }
+        }
+
     }
 }
