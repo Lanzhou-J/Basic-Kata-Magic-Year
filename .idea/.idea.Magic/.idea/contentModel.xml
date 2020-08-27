@@ -12,6 +12,7 @@
     <e p="$PROJECT_DIR$" t="IncludeFlat">
       <e p="Magic" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
+        <e p="CalculationResult.cs" t="Include" />
         <e p="Magic.cs" t="Include" />
         <e p="Magic.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
@@ -21,6 +22,9 @@
             </e>
           </e>
         </e>
+        <e p="Salary.cs" t="Include" />
+        <e p="User.cs" t="Include" />
+        <e p="Work.cs" t="Include" />
       </e>
       <e p="Magic.sln" t="IncludeFlat" />
       <e p="MagicTests" t="IncludeRecursive">
