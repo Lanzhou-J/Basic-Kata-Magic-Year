@@ -15,7 +15,7 @@ namespace Magic.Year
             Name = name;
             Surname = surname;
             Work = work;
-            Fullname = name + surname;
+            Fullname = FormatFullName(name, surname);
         }
 
         public User(){
