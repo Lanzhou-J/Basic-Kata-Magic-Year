@@ -1,13 +1,12 @@
-using System;
 using Xunit;
 using Magic.Year;
 
 namespace MagicTests
 {
-    public class MagicTests_UserShould
+    public class MagicTestsUserShould
     {
         private readonly User _user;
-        public MagicTests_UserShould()
+        public MagicTestsUserShould()
         {
             _user = new User("John","Doe",2020);
         }
@@ -34,6 +33,30 @@ namespace MagicTests
             var result = _user.WorkStartYear;
 
             Assert.Equal(2020, result);
+        }
+
+        [Fact]
+        public void SetNameValueLan_EqualLan()
+        {
+            _user.Name = "Lan";
+
+            Assert.Equal("Lan", _user.Name);
+        }
+
+        [Fact]
+        public void SetSurnameValueJiang_EqualJiang()
+        {
+            _user.Surname = "Jiang";
+
+            Assert.Equal("Jiang", _user.Surname);
+        }
+
+        [Fact]
+        public void SetWorkStartYearValue2018_Equal2018()
+        {
+            _user.WorkStartYear = 2018;
+
+            Assert.Equal(2018, _user.WorkStartYear);
         }
     }
 }
