@@ -24,30 +24,23 @@ namespace Magic.Year
 
     public class User
     {
-      private string _name;
-      public string Name{
-        get {return _name;}
-        set {_name = value;}
-      }
-      private string _surname;
-      public string Surname{
-        get {return _surname;}
-        set {_surname = value;}
-      }
+        public string Name { get; private set; }
 
-      public int WorkStartYear { get; set; }
+      public string Surname { get; private set; }
+
+      public int WorkStartYear { get; private set; }
 
       public User(string userName, string userSurname, int userWorkStartYear){
-        _name = userName;
-        _surname = userSurname;
+        Name = userName;
+        Surname = userSurname;
         WorkStartYear = userWorkStartYear;
       }
 
       public User(){
         Console.WriteLine("Please input your name: ");
-        _name = Console.ReadLine();
+        Name = Console.ReadLine();
         Console.WriteLine("Please input your surname: ");
-        _surname = Console.ReadLine();
+        Surname = Console.ReadLine();
         Console.WriteLine("Please input your work start year: ");
         WorkStartYear = int.Parse(Console.ReadLine());
       }
@@ -95,5 +88,40 @@ namespace Magic.Year
             Console.WriteLine("Magic Year: " + _magicYear);
         }
 
-    }    
+    }
+
+    public class Salary
+    {
+        private string _currency;
+        private decimal _amount;
+        private int _roundedAmount;
+
+        public Salary(string currency, decimal amount, int roundedAmount)
+        {
+            _currency = currency;
+            _amount = amount;
+            _roundedAmount = roundedAmount;
+        }
+
+        public Salary(decimal amount, int roundedAmount)
+        {
+            _currency = "AUD";
+            _amount = amount;
+            _roundedAmount = roundedAmount;
+        }        
+        public Salary(int roundedAmount)
+        {
+            _currency = "AUD";
+            _roundedAmount = roundedAmount;
+            _amount = _roundedAmount;
+        }
+        public Salary(decimal amount)
+        {
+            _currency = "AUD";
+            _amount = amount;
+            _roundedAmount = 0;
+        }
+        
+        
+    }
 }
