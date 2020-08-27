@@ -6,9 +6,11 @@ namespace MagicTests
     public class MagicTestsUserShould
     {
         private readonly User _user;
+        private readonly Salary _salary;
         public MagicTestsUserShould()
         {
-            _user = new User("John","Doe",2020);
+            _salary = new Salary(amount:60050);
+            _user = new User("John","Doe",2020, _salary);
         }
 
         [Fact]
@@ -33,6 +35,14 @@ namespace MagicTests
             var result = _user.WorkStartYear;
 
             Assert.Equal(2020, result);
+        }
+        
+        [Fact]
+        public void GetAnnualSalary_Equal_salary()
+        {
+            var result = _user.AnnualSalary;
+
+            Assert.Equal(_salary, result);
         }
     }
 }
