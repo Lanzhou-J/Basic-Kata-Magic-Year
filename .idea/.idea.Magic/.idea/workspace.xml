@@ -22,9 +22,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="840f9218-321b-425f-bdf2-31473e2e51d3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Magic/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Magic/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="840f9218-321b-425f-bdf2-31473e2e51d3" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -85,7 +83,7 @@
       <option name="presentableId" value="Default" />
       <updated>1598491358841</updated>
       <workItem from="1598491366300" duration="1341000" />
-      <workItem from="1598494149994" duration="12050000" />
+      <workItem from="1598494149994" duration="12192000" />
     </task>
     <servers />
   </component>
@@ -109,25 +107,25 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state width="1735" height="226" key="GridCell.Tab.0.bottom" timestamp="1598510688479">
+    <state width="1735" height="226" key="GridCell.Tab.0.bottom" timestamp="1598527452805">
       <screen x="-127" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1735" height="226" key="GridCell.Tab.0.bottom/-127.-1057.1920.1057/0.23.1680.1027@-127.-1057.1920.1057" timestamp="1598510688479" />
+    <state width="1735" height="226" key="GridCell.Tab.0.bottom/-127.-1057.1920.1057/0.23.1680.1027@-127.-1057.1920.1057" timestamp="1598527452805" />
     <state width="1600" height="226" key="GridCell.Tab.0.bottom/-127.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1598500719572" />
-    <state width="1735" height="226" key="GridCell.Tab.0.center" timestamp="1598510688478">
+    <state width="1735" height="226" key="GridCell.Tab.0.center" timestamp="1598527452803">
       <screen x="-127" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1735" height="226" key="GridCell.Tab.0.center/-127.-1057.1920.1057/0.23.1680.1027@-127.-1057.1920.1057" timestamp="1598510688478" />
+    <state width="1735" height="226" key="GridCell.Tab.0.center/-127.-1057.1920.1057/0.23.1680.1027@-127.-1057.1920.1057" timestamp="1598527452803" />
     <state width="1600" height="226" key="GridCell.Tab.0.center/-127.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1598500719571" />
-    <state width="1735" height="226" key="GridCell.Tab.0.left" timestamp="1598510688477">
+    <state width="1735" height="226" key="GridCell.Tab.0.left" timestamp="1598527452801">
       <screen x="-127" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1735" height="226" key="GridCell.Tab.0.left/-127.-1057.1920.1057/0.23.1680.1027@-127.-1057.1920.1057" timestamp="1598510688477" />
+    <state width="1735" height="226" key="GridCell.Tab.0.left/-127.-1057.1920.1057/0.23.1680.1027@-127.-1057.1920.1057" timestamp="1598527452801" />
     <state width="1600" height="226" key="GridCell.Tab.0.left/-127.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1598500719569" />
-    <state width="1735" height="226" key="GridCell.Tab.0.right" timestamp="1598510688479">
+    <state width="1735" height="226" key="GridCell.Tab.0.right" timestamp="1598527452804">
       <screen x="-127" y="-1057" width="1920" height="1057" />
     </state>
-    <state width="1735" height="226" key="GridCell.Tab.0.right/-127.-1057.1920.1057/0.23.1680.1027@-127.-1057.1920.1057" timestamp="1598510688479" />
+    <state width="1735" height="226" key="GridCell.Tab.0.right/-127.-1057.1920.1057/0.23.1680.1027@-127.-1057.1920.1057" timestamp="1598527452804" />
     <state width="1600" height="226" key="GridCell.Tab.0.right/-127.-1057.1920.1057/0.23.1680.1027@0.23.1680.1027" timestamp="1598500719572" />
     <state x="366" y="23" width="1467" height="1057" key="SettingsEditor" timestamp="1598494169645">
       <screen x="0" y="23" width="1680" height="1027" />
