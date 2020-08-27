@@ -17,25 +17,13 @@ namespace Magic.Year
             set { _roundedAmount = value; }
         }
 
-        public Salary(string currency, decimal amount, int roundedAmount)
+        public Salary(string currency, decimal amount)
         {
             _currency = currency;
             _amount = amount;
-            _roundedAmount = roundedAmount;
+            _roundedAmount = RoundSalary(amount);
         }
-
-        public Salary(decimal amount, int roundedAmount)
-        {
-            _currency = "AUD";
-            _amount = amount;
-            _roundedAmount = roundedAmount;
-        }        
-        public Salary(int roundedAmount)
-        {
-            _currency = "AUD";
-            _roundedAmount = roundedAmount;
-            _amount = _roundedAmount;
-        }
+        
         public Salary(decimal amount)
         {
             _currency = "AUD";

@@ -19,16 +19,12 @@ namespace Magic.Year
             _magicYear = CalculateMagicYear(user);
         }
 
-
-
         private int CalculateMagicYear(User user)
         {
             int magicYear = user.Work.StartYear + 65;
             return magicYear;
         }
-
-
-
+        
         public void PrintCalculationResult()
         {
             Console.WriteLine();

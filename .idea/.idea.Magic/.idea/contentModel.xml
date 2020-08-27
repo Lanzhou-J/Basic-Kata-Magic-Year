@@ -13,8 +13,8 @@
       <e p="Magic" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="CalculationResult.cs" t="Include" />
-        <e p="Magic.cs" t="Include" />
         <e p="Magic.csproj" t="IncludeRecursive" />
+        <e p="MagicYearCalculator.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -29,7 +29,6 @@
       <e p="Magic.sln" t="IncludeFlat" />
       <e p="MagicTests" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
-        <e p="MagicTests.cs" t="Include" />
         <e p="MagicTests.csproj" t="IncludeRecursive" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -38,6 +37,7 @@
             </e>
           </e>
         </e>
+        <e p="UserTests.cs" t="Include" />
       </e>
       <e p="packages" t="ExcludeRecursive" />
     </e>
