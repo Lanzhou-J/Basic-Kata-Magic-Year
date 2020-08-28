@@ -8,7 +8,7 @@ namespace Magic.Year
 
         public static void WelcomeUser()
         {
-            Console.WriteLine("Welcome to the magic year calculator!");
+            Console.WriteLine("Welcome to the magic year calculator!!!!!");
         }
 
 
