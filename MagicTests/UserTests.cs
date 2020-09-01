@@ -1,41 +1,30 @@
+using System;
 using Xunit;
 using Magic.Year;
 
 namespace MagicTests
 {
-    public class MagicTestsUserShould
+    public class UserTests
     {
         private readonly User _user;
-        private readonly Salary _salary;
-        private readonly Work _work;
-        public MagicTestsUserShould()
-        {
-            _salary = new Salary(amount:60050);
-            _work = new Work(startYear:2020, annualSalary:_salary);
-            _user = new User("John","Doe", work:_work);
-        }
-
+        
         [Fact]
-        public void GetName_EqualJohn()
+        public void GetFullname_ShouldReturnFullname_WhenHavingFirstNameAndSurname()
         {
-            var result = _user.Name;
+            User _user = new User("John", "Doe");
+            var result = _user.GetFullname();
 
-            Assert.Equal("John", result);
-        }
-
-        [Fact]
-        public void GetSurName_EqualDoe()
-        {
-            var result = _user.Surname;
-
-            Assert.Equal("Doe", result);
+            Assert.Equal("John Doe", result);
         }
         
         [Fact]
-        public void GetFullName_EqualJohnDoe()
+        public void GetFullname_ShouldReturnNewFullname_WhenHavingFirstNameAndSurname()
         {
-            var result = _user.Fullname;
-            Assert.Equal("John Doe", result);
+            User _user = new User("Lanzhou", "Jiang");
+            var result = _user.GetFullname();
+
+            Assert.Equal("Lanzhou Jiang", result);
         }
+
     }
 }
