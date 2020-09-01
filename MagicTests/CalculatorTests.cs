@@ -22,5 +22,14 @@ namespace MagicTests
             Assert.Equal(2085, result);
         }
         
+        [Fact]
+        public void CalculateMagicYear_Input1980_Equal2045()
+        {
+            var startYear = 1980;
+            var result = _calculator.CalculateMagicYear(startYear:startYear);
+
+            Assert.Equal(2045, result);
+        }
+        
     }
 }
