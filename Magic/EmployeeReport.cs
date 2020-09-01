@@ -13,14 +13,7 @@ namespace Magic.Year
             _monthlySalary = monthlySalary;
             _magicYear = magicYear;
         }
-        
 
-        // private int CalculateMagicYear(User user)
-        // {
-        //     int magicYear = user.Work.StartYear + 65;
-        //     return magicYear;
-        // }
-        
         public void PrintReport()
         {
             Console.WriteLine();
