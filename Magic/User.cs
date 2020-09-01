@@ -17,24 +17,11 @@ namespace Magic.Year
         
         public string GetFullname()
         {
-            if(Firstname != null || Surname != null)
-            {
-                var fullName = Firstname + " " + Surname;
-                return fullName;
-            }
-            else
-            {
-                throw new InvalidNameException();
-            }
+            var fullName = Firstname + " " + Surname;
+            return fullName;
 
         }
     }
 
-    public class InvalidNameException : Exception
-    {
-        public InvalidNameException()
-        {
-        }
-        
-    }
+
 }

@@ -22,11 +22,29 @@ namespace Magic.Year
                 throw new FormatException("Input was not a number");
             }  
         }
+        
+        public class InvalidNameException : Exception
+        {
+            public InvalidNameException()
+            {
+            }
+        
+        }
+
+        public void ThrowExceptionWhenNameIsInvalid(string firstname, string surname)
+        {
+            if (string.IsNullOrEmpty(firstname)||string.IsNullOrEmpty(surname))
+            {
+                throw new Exception("Name should not be null.");
+            }
+            
+        }
 
         public User CollectUserDetails() {
             var firstname = Ask("Please input your name: ");
-            var lastname = Ask("Please input your surname: ");
-            return new User(firstname, lastname);
+            var surname = Ask("Please input your surname: ");
+            ThrowExceptionWhenNameIsInvalid(firstname,surname);
+            return new User(firstname, surname);
         }
         
         public Salary CollectSalaryDetails() {

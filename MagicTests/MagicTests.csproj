@@ -16,4 +16,8 @@
   <ItemGroup>
     <ProjectReference Include="..\Magic\Magic.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="UserInputTests.cs" />
+  </ItemGroup>
 </Project>

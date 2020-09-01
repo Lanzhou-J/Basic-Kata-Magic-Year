@@ -26,12 +26,5 @@ namespace MagicTests
             Assert.Equal("Lanzhou Jiang", result);
         }
 
-        // [Fact]
-        // public void GetFullname_ShouldThrowException_WhenFirstnameAndSurnameIsNull()
-        // {
-        //     User _user = new User();
-        //     Assert.Throws<InvalidNameException>(() => _user.GetFullname());
-        // }
-
     }
 }
