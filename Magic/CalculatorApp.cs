@@ -3,7 +3,7 @@
 namespace Magic.Year
 {
  
-    public class MagicYearCalculator
+    public class CalculatorApp
     {
 
         public static void WelcomeUser()
@@ -15,7 +15,11 @@ namespace Magic.Year
         public static void Main()
         {
             WelcomeUser();
-            User newUser = new User();
+            UserInput newUserInput = new UserInput(); 
+            newUserInput.collectUserInput();
+            Work work = new Work()
+            User newUser = new User(newUserInput.FirstNameInput, newUserInput.LastNameInput, work);
+            User newUser = new User(newUserInput.FirstNameInput, newUserInput.LastNameInput);// User class instantiates work
             CalculationResult newCalculationResult = new CalculationResult(newUser);
             newCalculationResult.PrintCalculationResult();
         }
