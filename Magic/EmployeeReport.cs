@@ -22,6 +22,7 @@ namespace Magic.Year
             Console.WriteLine("Name: "+ _user.GetFullname()); 
             Console.WriteLine("Magic Year: " + _calculator.CalculateMagicYear(_work.StartYear));
             Console.WriteLine("Monthly salary: "  + _work.CalculateMonthlySalary().RoundedAmount);
+            
         }
 
     }

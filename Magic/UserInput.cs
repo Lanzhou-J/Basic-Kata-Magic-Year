@@ -6,7 +6,7 @@ namespace Magic.Year
 
         private string Ask(string question)
         {
-            Console.WriteLine(question);
+            Console.Write(question);
             return Console.ReadLine();
         }
 

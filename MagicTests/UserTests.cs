@@ -1,3 +1,4 @@
+using System;
 using Xunit;
 using Magic.Year;
 
@@ -8,15 +9,29 @@ namespace MagicTests
         private readonly User _user;
         
         [Fact]
-        public void FormatFullname_ShouldReturnFullname_WhenHavingFirstNameAndSurname()
+        public void GetFullname_ShouldReturnFullname_WhenHavingFirstNameAndSurname()
         {
-            //should instantiate a new user here
+            User _user = new User("John", "Doe");
             var result = _user.GetFullname();
 
             Assert.Equal("John Doe", result);
         }
         
-        //if name null -> throw exception
-        
+        [Fact]
+        public void GetFullname_ShouldReturnNewFullname_WhenHavingFirstNameAndSurname()
+        {
+            User _user = new User("Lanzhou", "Jiang");
+            var result = _user.GetFullname();
+
+            Assert.Equal("Lanzhou Jiang", result);
+        }
+
+        // [Fact]
+        // public void GetFullname_ShouldThrowException_WhenFirstnameAndSurnameIsNull()
+        // {
+        //     User _user = new User();
+        //     Assert.Throws<InvalidNameException>(() => _user.GetFullname());
+        // }
+
     }
 }
