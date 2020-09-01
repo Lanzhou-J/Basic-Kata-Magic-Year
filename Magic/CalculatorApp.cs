@@ -20,7 +20,7 @@ namespace Magic.Year
             Salary annualSalary = newUserInput.InstantiateAnnualSalary();
             Work newWork = newUserInput.InstantiateNewWork(annualSalary);
 
-            var fullname = newUser.FormatFullName();
+            var fullname = newUser.FormatFullname();
             
             Calculator newCalculator = new Calculator();
             var magicYear = newCalculator.CalculateMagicYear(newWork.StartYear);

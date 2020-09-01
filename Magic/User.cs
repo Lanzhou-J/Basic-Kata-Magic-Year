@@ -16,7 +16,7 @@ namespace Magic.Year
             
         }
 
-        public string FormatFullName() {
+        public string FormatFullname() {
             string fullName = Firstname + " " + Surname;
             return fullName;
         }
