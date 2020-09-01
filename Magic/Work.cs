@@ -13,14 +13,7 @@ namespace Magic.Year
             AnnualSalary = annualSalary;
             
         }
-
-        public Work(string startYear)
-        {
-            Console.WriteLine("Please input your work start year: "); 
-            StartYear = int.Parse(Console.ReadLine()); 
-            Console.WriteLine("Please input your annual salary: "); 
-            AnnualSalary = new Salary();
-        }
+        
         
         public Salary CalculateMonthlySalary()
         {
