@@ -22,18 +22,12 @@ namespace Magic.Year
             {
                 try
                 {
-                    User newUser = newUserInput.InstantiateNewUser();
-                    Salary annualSalary = newUserInput.InstantiateAnnualSalary();
-                    Work newWork = newUserInput.InstantiateNewWork(annualSalary);
-                
-                    var fullname = newUser.FormatFullname();
-            
+                    User newUser = newUserInput.CollectUserDetails();
+                    Salary annualSalary = newUserInput.CollectSalaryDetails();
+                    Work newWork = newUserInput.CollectWorkDetails(annualSalary);
                     Calculator newCalculator = new Calculator();
-                    var magicYear = newCalculator.CalculateMagicYear(newWork.StartYear);
 
-                    var monthlySalary = newWork.CalculateMonthlySalary().RoundedAmount;
-            
-                    EmployeeReport newReport = new EmployeeReport(fullname:fullname, magicYear:magicYear, monthlySalary:monthlySalary);
+                    EmployeeReport newReport = new EmployeeReport(user:newUser, work:newWork, calculator:newCalculator);
                     newReport.PrintReport();
 
                     adding = false;

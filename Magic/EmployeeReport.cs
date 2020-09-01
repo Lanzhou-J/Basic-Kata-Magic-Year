@@ -3,15 +3,15 @@ namespace Magic.Year
 {
     public class EmployeeReport
     {
-        private readonly string _fullname;
-        private readonly int _monthlySalary;
-        private readonly int _magicYear;
+        private readonly User _user;
+        private readonly Work _work;
+        private readonly Calculator _calculator;
 
-        public EmployeeReport(string fullname, int monthlySalary, int magicYear)
+        public EmployeeReport(User user, Work work, Calculator calculator)
         {
-            _fullname = fullname;
-            _monthlySalary = monthlySalary;
-            _magicYear = magicYear;
+            _user = user;
+            _work = work;
+            _calculator = calculator;
         }
 
         public void PrintReport()
@@ -19,9 +19,9 @@ namespace Magic.Year
             Console.WriteLine();
             Console.WriteLine("Your magic age details are:"); 
             Console.WriteLine(); 
-            Console.WriteLine("Name: "+ _fullname); 
-            Console.WriteLine("Magic Year: " + _magicYear);
-            Console.WriteLine("Monthly salary: "  + _monthlySalary);
+            Console.WriteLine("Name: "+ _user.FormatFullname()); 
+            Console.WriteLine("Magic Year: " + _calculator.CalculateMagicYear(_work.StartYear));
+            Console.WriteLine("Monthly salary: "  + _work.CalculateMonthlySalary().RoundedAmount);
         }
 
     }
