@@ -16,12 +16,8 @@ namespace Magic.Year
         {
             WelcomeUser();
             UserInput newUserInput = new UserInput(); 
-            newUserInput.InstantiateNewUserBasedOnInput();
-            Work work = new Work()
-            User newUser = new User(newUserInput.FirstNameInput, newUserInput.LastNameInput, work);
-            User newUser = new User(newUserInput.FirstNameInput, newUserInput.LastNameInput);// User class instantiates work
-            CalculationResult newCalculationResult = new CalculationResult(newUser);
-            newCalculationResult.PrintCalculationResult();
+            User newUser = newUserInput.InstantiateNewUserBasedOnInput();
+            Console.WriteLine(newUser.FormatFullName());
         }
     }
 
