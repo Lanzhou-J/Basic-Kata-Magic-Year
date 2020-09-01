@@ -3,26 +3,20 @@ namespace Magic.Year
 {
     public class UserInput
     {
-      // public string FirstNameInput {get; private set;}
-      // public string LastNameInput {get; private set;}
 
-      // public int StartYearInput {get; private set;}
-
-      // public decimal AmountInput {get; private set;}
-
-      public User collectUserInput() {
-
-            User newUser = new User();
+        public User InstantiateNewUserBasedOnInput() {
             Console.WriteLine("Please input your name: "); 
-            newUser.Name = Console.ReadLine(); 
+            var firstname = Console.ReadLine(); 
             Console.WriteLine("Please input your surname: "); 
-            newUser.Surname = Console.ReadLine(); 
-            // Console.WriteLine("Please input your work start year: "); 
-            // StartYearInput = int.Parse(Console.ReadLine()); 
-            // Console.WriteLine("Please input your annual salary: "); 
-            // AmountInput = decimal.Parse(Console.ReadLine());
-          return newUser;// new User(first, last)
-      }
+            var lastname = Console.ReadLine();
+            return new User(firstname, lastname);
+        }
+        public Work InstantiateNewWorkBasedOnInput() {
+            Console.WriteLine("Please input your work start year: "); 
+            var startYear = Console.ReadLine(); 
+            
+            return new Work(startYear);
+        }
 
 
     }

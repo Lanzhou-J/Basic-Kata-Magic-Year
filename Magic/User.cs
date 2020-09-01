@@ -3,18 +3,12 @@ namespace Magic.Year
 {
     public class User
     {
-        public string Name { get; set; }
+        private string Firstname { get;}
 
-        public string Surname { get; set; }
+        public string Surname { get; private set; }
 
-        // public string Fullname { get; private set; }
-
-        //public Work Work { get; private set; }
-
-        // static 
-        
-        public User(string name, string surname){
-            Name = name;
+        public User(string firstname, string surname){
+            Firstname = firstname;
             Surname = surname;
         }
 
@@ -22,8 +16,8 @@ namespace Magic.Year
             
         }
 
-        private string FormatFullName(string name, string surname) {
-            string fullName = name + " " + surname;
+        public string FormatFullName() {
+            string fullName = Firstname + " " + Surname;
             return fullName;
         }
     }
