@@ -4,30 +4,38 @@ namespace Magic.Year
     public class UserInput
     {
 
+        private string Ask(string question)
+        {
+            Console.WriteLine(question);
+            return Console.ReadLine();
+        }
+
+        private int AskInt(string question)
+        {
+            try
+            {
+                System.Console.Write(question);
+                return int.Parse(Console.ReadLine());
+            }
+            catch (Exception e)
+            {
+                throw new FormatException("Input was not a number");
+            }  
+        }
+
         public User CollectUserDetails() {
-            Console.WriteLine("Please input your name: "); 
-            var firstname = Console.ReadLine(); 
-            Console.WriteLine("Please input your surname: "); 
-            var lastname = Console.ReadLine();
+            var firstname = Ask("Please input your name: ");
+            var lastname = Ask("Please input your surname: ");
             return new User(firstname, lastname);
         }
         
         public Salary CollectSalaryDetails() {
-            Console.WriteLine("Please enter your annual salary: "); 
-            var annualSalary = int.Parse(Console.ReadLine());
+            var annualSalary = AskInt("Please enter your annual salary: ");
             return new Salary(amount:annualSalary);
         }
         
         public Work CollectWorkDetails(Salary annualSalary) {
-            Console.WriteLine("Please input your work start year: ");
-            var input = Console.ReadLine();
-            var startYear = 2000;
-            // if statement - unit tests (true / false)
-            if (input != null)
-            {
-                startYear = int.Parse(input);
-                
-            }
+            var startYear = AskInt("Please input your work start year: ");
             return new Work(startYear:startYear, annualSalary: annualSalary);
         }
         

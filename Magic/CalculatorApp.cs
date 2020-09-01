@@ -3,10 +3,9 @@
 namespace Magic.Year
 {
  
-    public class CalculatorApp
+    public static class CalculatorApp
     {
-
-        public static void WelcomeUser()
+        private static void WelcomeUser()
         {
             Console.WriteLine("Welcome to the magic year calculator!");
         }

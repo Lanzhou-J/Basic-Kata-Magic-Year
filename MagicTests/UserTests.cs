@@ -11,7 +11,7 @@ namespace MagicTests
         public void FormatFullname_ShouldReturnFullname_WhenHavingFirstNameAndSurname()
         {
             //should instantiate a new user here
-            var result = _user.FormatFullname();
+            var result = _user.GetFullname();
 
             Assert.Equal("John Doe", result);
         }

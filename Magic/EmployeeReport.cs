@@ -19,7 +19,7 @@ namespace Magic.Year
             Console.WriteLine();
             Console.WriteLine("Your magic age details are:"); 
             Console.WriteLine(); 
-            Console.WriteLine("Name: "+ _user.FormatFullname()); 
+            Console.WriteLine("Name: "+ _user.GetFullname()); 
             Console.WriteLine("Magic Year: " + _calculator.CalculateMagicYear(_work.StartYear));
             Console.WriteLine("Monthly salary: "  + _work.CalculateMonthlySalary().RoundedAmount);
         }

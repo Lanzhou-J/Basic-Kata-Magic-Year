@@ -5,7 +5,7 @@ namespace Magic.Year
     {
         private string Firstname { get;}
 
-        public string Surname { get; private set; }
+        private string Surname { get; set; }
 
         public User(string firstname, string surname){
             Firstname = firstname;
@@ -13,11 +13,9 @@ namespace Magic.Year
         }
 
         public User(){
-            
         }
         
-        //GetFullName
-        public string FormatFullname() {
+        public string GetFullname() {
             string fullName = Firstname + " " + Surname;
             return fullName;
         }
