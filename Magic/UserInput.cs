@@ -11,12 +11,18 @@ namespace Magic.Year
             var lastname = Console.ReadLine();
             return new User(firstname, lastname);
         }
-        // public Work InstantiateNewWorkBasedOnInput() {
-        //     Console.WriteLine("Please input your work start year: "); 
-        //     var startYear = Console.ReadLine(); 
-        //     
-        //     return new Work(startYear);
-        // }
+        
+        public Salary InstantiateAnnualSalaryBasedOnInput() {
+            Console.WriteLine("Please enter your annual salary: "); 
+            var annualSalary = int.Parse(Console.ReadLine());
+            return new Salary(amount:annualSalary);
+        }
+        
+        public Work InstantiateNewWorkBasedOnInput(Salary annualSalary) {
+            Console.WriteLine("Please input your work start year: "); 
+            int startYear = int.Parse(Console.ReadLine());
+            return new Work(startYear:startYear, annualSalary: annualSalary);
+        }
         
     }
 }

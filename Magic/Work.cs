@@ -14,7 +14,7 @@ namespace Magic.Year
             MonthlySalary = CalculateMonthlySalary(annualSalary);
         }
 
-        public Work()
+        public Work(string startYear)
         {
             Console.WriteLine("Please input your work start year: "); 
             StartYear = int.Parse(Console.ReadLine()); 

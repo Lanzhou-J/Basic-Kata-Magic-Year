@@ -18,6 +18,9 @@ namespace Magic.Year
             UserInput newUserInput = new UserInput(); 
             User newUser = newUserInput.InstantiateNewUserBasedOnInput();
             Console.WriteLine(newUser.FormatFullName());
+            Salary annualSalary = newUserInput.InstantiateAnnualSalaryBasedOnInput();
+            Work newWork = newUserInput.InstantiateNewWorkBasedOnInput(annualSalary);
+            Console.WriteLine(newWork.MonthlySalary.RoundedAmount);
         }
     }
 
